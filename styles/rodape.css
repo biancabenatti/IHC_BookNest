@@ -1,0 +1,28 @@
+hr {
+    margin: 0;
+}
+
+.rodape {
+    background-color: var(--branco);
+    padding: 1em;
+    color: var(--azul);
+    text-align: center; 
+    padding: 20px;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rodape__nome {
+    font-size: 1rem; 
+    margin: 8px 0;
+    padding: 0; 
+}
+.rodape__titulo {
+    font-size: 1.2rem; 
+    font-weight: bold; 
+    letter-spacing: 1px; 
+    text-transform: uppercase; 
+    margin-bottom: 11px; 
+    padding: 0; 
+}
