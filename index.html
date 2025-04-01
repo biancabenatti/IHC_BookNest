@@ -7,7 +7,7 @@
 </head>
 
 <body>
-    <section id="sidebar">
+    <section class="sidebar">
         <div class="inner">
             <img class="logo" src="img/Nest.png" alt="Logo">
             <nav>
@@ -15,7 +15,6 @@
                     <li><a href="#intro">Início</a></li>
                     <li><a href="#catalogo">Catálogo</a></li>
                     <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#contato">Contato</a></li>
                 </ul>
             </nav>
         </div>
@@ -35,16 +34,18 @@
         </section>
     </div>
     <section id="catalogo" class="wrapper style2">
-        <button id="btnAdicionarLivro">
-            <i class="fa fa-plus"></i> Adicionar Livro
-        </button>
-        <label for="categoriaFiltro"></label>
-        <select id="categoriaFiltro" class="categoriaFiltro">
-            <option value="">Selecione uma Categoria</option>
-            <option value="Ficção">Ficção</option>
-            <option value="Ciência">Ciência</option>
-            <option value="História">História</option>
-        </select>
+        <div class="botoes-adicionais">
+            <button id="btnAdicionarLivro">
+                <i class="fa fa-plus"></i> Adicionar Livro
+            </button>
+            <label for="categoriaFiltro"></label>
+            <select id="categoriaFiltro" class="categoriaFiltro">
+                <option value="">Selecione uma Categoria</option>
+                <option value="Ficção">Ficção</option>
+                <option value="Ciência">Ciência</option>
+                <option value="História">História</option>
+            </select>
+        </div>
 
         <section class="catalogo">
 
@@ -89,85 +90,20 @@
     <section id="sobre" class="style3">
         <div class="sobre">
             <h2>Sobre a Biblioteca Virtual</h2>
-            <p>Somos uma biblioteca virtual desenvolvida com o intuito de facilitar o acesso de livros digitais. Este
-                projeto foi criado para fins acadêmicos, como parte do trabalho da disciplina de Banco de Dados Não
-                Relacional do curso de Desenvolvimento de Software Multiplataforma da FATEC Votorantim.</p>
-            <p>Nosso objetivo é permitir que os usuários possam consultar, armazenar e organizar suas leituras de
-                maneira prática e eficiente, aproveitando as vantagens dos bancos de dados não relacionais para otimizar
-                a gestão e o acesso à informação.</p>
-            <div class="features">
-                <section>
-                    <h3>Catálogo de Livros</h3>
-                    <p>Oferecemos um vasto catálogo de livros organizados por categoria, que podem ser facilmente
-                        acessados por todos os usuários da plataforma.</p>
-                </section>
-                <section>
-                    <h3>Integrantes</h3>
-                    <p>Bianca Pichirilo Vergueiro Benatti</p>
-                    <p>Nome 2</p>
-                    <p>Nome 3</p>
-                    <p>Nome 4</p>
-                </section>
-            </div>
-        </div>
-        <img class="logo" src="img/sobre.jpg" alt="sobre">
-    </section>
+            <p>Somos uma plataforma dedicada ao armazenamento de avaliações de livros já lidos. 
+                Nosso objetivo é proporcionar um espaço onde os usuários possam registrar suas 
+                impressões sobre as obras que consumiram, criando um histórico de leituras.</p>
+            <p>Este projeto foi desenvolvido para fins acadêmicos, como parte do trabalho da disciplina de Banco de Dados Não Relacional do curso de Desenvolvimento de Software Multiplataforma da FATEC Votorantim.</p>
 
-    <section id="contato" class="wrapper style1 fade-up">
-        <div class="inner">
-            <h2>Contato</h2>
-            <p>Tem alguma dúvida ou quer saber mais sobre nossos serviços? Fique à vontade para entrar em contato!
-                Estamos prontos para ajudar e responder suas perguntas.</p>
-            <div class="split">
-                <section>
-                    <form method="post" action="#">
-                        <div class="fields">
-                            <div class="half">
-                                <div class="conteudo">
-                                    <label for="name">Name</label>
-                                    <input type="text" name="name" id="name" />
-                                </div>
-                                <div class="conteudo">
-                                    <label for="email">Email</label>
-                                    <input type="text" name="email" id="email" />
-                                </div>
-                            </div>
-                            <div class="field">
-                                <label for="message">Mensagem</label>
-                                <textarea name="message" id="message" rows="5"></textarea>
-                            </div>
-                        </div>
-                        <ul class="actions">
-                            <li><a href="" class="submit">Enviar Mensagem</a></li>
-                        </ul>
-                    </form>
-                </section>
-                <section>
-                    <ul class="contact">
-                        <li>
-                            <h3>Endereço</h3>
-                            <span>FATEC – Faculdade de Tecnologia de Votorantim
-                                Rua João P. S. Guimarães, 170 – Vila Nova Votorantim
-                                Votorantim - SP
-                                CEP: 18110-720</span>
-                        </li>
-                        <li>
-                            <h3>Telefone</h3>
-                            <span>(000) 000-0000</span>
-                        </li>
-                    </ul>
-                </section>
-            </div>
+            <h3>Avaliações de Livros</h3>
+            <p>Nossa plataforma permite que os usuários cataloguem suas leituras, adicionem uma imagem da capa e atribuam notas aos livros que já leram. Dessa forma, 
+                facilitamos o compartilhamento de experiências literárias e auxiliamos na descoberta de novas obras de interesse.</p>
         </div>
     </section>
 
-    </section>
-    <div>
-
-        <footer>
-            <p>&copy; 2025 Biblioteca Online</p>
-        </footer>
-    </div>
+    <footer>
+        <p>&copy; 2025 Biblioteca Online</p>
+    </footer>
 
     <script src="script.js"></script>
 
