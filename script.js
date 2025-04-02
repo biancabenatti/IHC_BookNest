@@ -93,6 +93,17 @@ btnAbrir.addEventListener("click", () => {
     modal.style.display = "block";
 });
 
+btnAbrir.addEventListener("click", () => {
+    // Limpar os campos do modal
+    document.getElementById('titulo').value = '';
+    document.getElementById('capa').value = '';
+    document.getElementById('categoria').value = '';
+    document.getElementById('avaliacao').value = '';
+    document.getElementById("file-name").textContent = "Nenhum arquivo selecionado";
+
+    modal.style.display = "block";
+});
+
 // Fechar o modal ao clicar no "X"
 btnFechar.addEventListener("click", () => {
     modal.style.display = "none";
